@@ -1,0 +1,10 @@
+@import "./nav";
+@import "./colors";
+@import "./section1";
+
+body{
+    background-color: $body;
+    font-family: 'Bangers', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+}

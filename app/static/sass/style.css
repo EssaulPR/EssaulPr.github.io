@@ -8,7 +8,6 @@
 
 .Section1 {
   height: 100vh;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,17 +17,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .info-container-img {
   width: 100%;
-  height: 700px;
   position: absolute;
-}
-
-.info-container-img img {
+  background: url("../img/camionCarga2.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
   width: 100%;
-  height: 100%;
 }
 
 .info-container-info {
@@ -79,6 +81,83 @@
 
 .blackbtn:hover {
   background-color: #313335;
+}
+
+#cont-sect {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cont-sect #cont-identidad {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#cont-sect #cont-identidad h1 {
+  font-size: 60px;
+}
+
+#cont-sect #cont-identidad p {
+  font-size: 25px;
+}
+
+#cont-sect .subcont-identidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cont-sect .subcont-identidad .sucont {
+  padding: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 65px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.42);
+  width: 550px;
+}
+
+#cont-sect .subcont-identidad .sucont p {
+  font-size: 22px;
+}
+
+#cont-sect .subcont-identidad .sucont h3 {
+  font-size: 40px;
+}
+
+#cont-sect .subcont-identidad .sucont ul {
+  list-style: none;
+  font-size: 25px;
 }
 
 body {

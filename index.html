@@ -14,26 +14,26 @@
 </head>
 
 <body>
+  <!-- FALTA ==> PARALLAX SCROLL // BACKGROUNDS // MODIFICAR LETRAS-->
     <!-- nav -->
     <nav class="StyTypo navbar navbar-expand-lg navbar-light bg-warning fixed-top">
         <img class="logonav" src="./app/static/img/Logo GR.png" alt="">
-        <a class="navbar-brand" href="index.html">Gr México C.I</a>
+        <a class="navbar-brand" href="#" id="home">Gr México C.I</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a data-scroll class="nav-item nav-link active bd-right" href="#Home">Inicio</a>
-            <a class="nav-item nav-link active bd-right" href="#Servicios">Servicios</a>
-            <a class="nav-item nav-link active bd-right" href="#Identidad">Nuestra Identidad</a>
+            <a data-scroll class="nav-item nav-link active bd-right" href="#" id="btn-identity">Nuestra Identidad</a>
+            <a class="nav-item nav-link active bd-right" href="#">Servicios</a>
             <a class="nav-item nav-link active" href="#">Contactanos</a>
           </div>
         </div>
       </nav>
 
-      <section class="Section1">
+      <section class="Section1" id="scroll-index">
         <div class="info-container-img">
-          <img src="./app/static/img/camionCarga2.jpg" alt="" class="imgCamionCarga">
+          <!-- <img src="./app/static/img/camionCarga2.jpg" alt="" class="imgCamionCarga"> -->
         </div>
 
         <div class="info-container-info">
@@ -41,16 +41,70 @@
         </div>
         
         <div class="info-container-btn">
-          <a class="btn orangebtn" style="color: white;">View Services</a>
-          <a class="btn blackbtn" style="color: white;">View About</a>
-          <a class="btn orangebtn" style="color: white;">View Quotation</a>
+          <a class="btn orangebtn" style="color: white;">Ver Servicios</a>
+          <a id="sub-btn-identity" class="btn blackbtn" style="color: white;">Ver Identidad</a>
+          <a class="btn orangebtn" style="color: white;">Ver Cotizacion</a>
         </div>
       </section>
 
+      <section id="cont-sect" >
+        <div id="cont-identidad">
+          <h1>Quienes somos?</h1>
+          <p>
+            En GR somos una empresa especializada en brindar asesorías de comercio exterior, 
+            despacho aduanal y comercialización internacional de sus productos. <br>
+            Nuestro modelo de negocio nació como respuesta a la demanda del sector empresarial en 
+            establecer una línea de negocio soportada por la generación de ventas al extranjero.
+          </p>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <div class="subcont-identidad">
+          <div class="sucont sub-mision">
+            <h3 class="tmision">Mision</h3>
+            <p>
+              Comercializar productos nacionales en mercados extranjeros, 
+              mediante la ejecución de proyectos de exportación que se ajustan 
+              a las necesidades y a la naturaleza de los bienes de nuestros
+              clientes
+
+            </p>
+          </div>
+
+          <div class="sucont sub-vision">
+            <h3 class="tvision">Vision</h3>
+            <p>
+              Ser la comercializadora especializada en exportación de productos 
+              mexicanos más eficiente y competitiva del país,
+              entregando soluciones integrales en materia de comercio exterior.
+            </p>
+          </div>
+        
+          <div class="sucont sub-razondeser">
+            <h3 class="trazondeser">Razon De Ser</h3>
+            <p>
+              GR comercializadora internacional comienza por la iniciativa de diversificar socios comerciales 
+              en materia de comercio exterior, teniendo como eje rector productos mexicanos que compiten en 
+              calidad, precio y valor agregado a nivel internacional.
+            </p>
+          </div>
+
+          <div class="sucont sub-valores">
+            <h3 class="tvalores">Nuestos Valores</h3>
+            <ul>
+              <li>Responsabilidad.</li>
+              <li>Decisiones en valor de nuestro cliente.</li>
+              <li>Eficiencia y competitividad.</li>
+              <li>Visión global.</li>
+            </ul>
+          </div>
+        </div>
+
+    </section>
+
+    <script src="./app/static/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

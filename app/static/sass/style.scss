@@ -1,11 +1,6 @@
-@import "./nav";
-@import "./colors";
-@import "./section1";
-@import "./section2";
-
-body{
-    background-color: $body;
-    font-family: 'Bangers', cursive;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 500;
-}
+@import './settings/fonts';
+@import './settings/colors';
+@import './components/nav';
+@import './components/section1';
+@import './components/section2';
+@import './components/services';

@@ -1,0 +1,48 @@
+// alinear al centro
+@mixin FlexCenter($altura, $direc) {
+  height: $altura;
+  display: flex;
+  justify-content: center;
+  flex-direction: $direc;
+}
+.Section1 {
+  @include FlexCenter(100vh, row);
+}
+.info-container-img {
+  position: absolute;
+  background: url('../img/camionCarga2.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+.info-container-info {
+  position: relative;
+  margin: 0 2em 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+
+  h1 {
+    color: $negro;
+    font-weight: 500;
+  }
+  .btn {
+    margin-left: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .orangebtn {
+    background-color: $naranja;
+    &:hover {
+      background-color: rgb(184, 121, 20);
+    }
+  }
+  .blackbtn {
+    background-color: $negro;
+    &:hover {
+      background-color: rgb(49, 51, 53);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.w3-container {
+  background-color: $nav-bar-color;
+  max-height: 500px;
+  height: 100%;
+  h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+  .w3-row {
+    .w3-third {
+      width: 20%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+  }
+
+  .w3-container.city {
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    p {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 0 10%;
+    }
+  }
+}

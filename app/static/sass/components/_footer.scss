@@ -1,0 +1,18 @@
+.cont-footer{
+    margin-top: 150px;
+    text-align: center;
+    background-color: $nav-bar-color;
+    position: absolute;
+    width: 100%;
+    .col{    
+        position: relative;
+        top: -50px;
+    }
+    .img-icon{
+        height: 80px;
+        margin-bottom: 25px;
+    }
+    span{
+        font-size: 20px;
+    }
+}

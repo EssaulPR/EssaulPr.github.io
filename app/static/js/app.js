@@ -5,6 +5,8 @@ const subNuestraIdentidad =document.querySelector("#sub-btn-identity");
 // servicios
 const services =document.querySelector("#btn-services");
 const subServices =document.querySelector("#sub-btn-services");
+// Contactanos
+const contact =document.querySelector("#btn-contact");
 // Home
 const home =document.querySelector("#home");
 // Para hacer el toggle
@@ -36,5 +38,11 @@ services.addEventListener("click", (e) => {
 subServices.addEventListener("click", (e) => {
     $("html, body").animate({
         scrollTop: $("#cont-services").offset().top
+    }, 1500)
+});
+// BOTON PARA SCROLL DESDE EL NAV
+contact.addEventListener("click", (e) => {
+    $("html, body").animate({
+        scrollTop: $("#cont-contact").offset().top
     }, 1500)
 });

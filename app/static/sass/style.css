@@ -212,4 +212,26 @@ h6 {
   font-size: 1.5em;
   margin: 0 10%;
 }
+
+.cont-footer {
+  margin-top: 150px;
+  text-align: center;
+  background-color: #ffc107;
+  position: absolute;
+  width: 100%;
+}
+
+.cont-footer .col {
+  position: relative;
+  top: -50px;
+}
+
+.cont-footer .img-icon {
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.cont-footer span {
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,214 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./app/static/css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="Description" content="Enter your description here" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="./app/static/sass/style.css" />
+    <title>Gr Mexico...</title>
+  </head>
 
-  <title>Gr Mexico...</title>
-</head>
-
-<body>
-  <nav class="StyTypo navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-    <img class="logonav" src="./app/static/img/Logo GR.png" alt="" />
-    <a class="navbar-brand" href="#" id="home">Gr México C.I</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a data-scroll class="nav-item nav-link active bd-right" href="#" id="btn-identity">Nuestra Identidad</a>
-        <a class="nav-item nav-link active bd-right" href="#" id="btn-services">Servicios</a>
-        <a class="nav-item nav-link active" href="#" id="btn-contact">Contactanos</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="info-container-img"></div>
-
-  <section class="Section1" id="scroll-index">
-    <div class="info-container-info">
-      <h1 class="titularDeImg">
-        Logistic and <br />
-        Transportation company
-      </h1>
-      <div class="d-flex">
-        <a id="sub-btn-identity" class="btn orangebtn shadow-lg rounded" style="color: white;">Ver Identidad</a>
-        <a id="sub-btn-services" class="btn blackbtn shadow-lg rounded" style="color: white;">Ver Servicios</a>
-        <a class="btn orangebtn" style="color: white;">Ver Cotizacion</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="cont-sect">
-    <div id="cont-identidad">
-      <h1>Quienes somos?</h1>
-      <p>
-        En GR somos una empresa especializada en brindar asesorías de comercio
-        exterior, despacho aduanal y comercialización internacional de sus
-        productos. <br />
-        Nuestro modelo de negocio nació como respuesta a la demanda del sector
-        empresarial en establecer una línea de negocio soportada por la
-        generación de ventas al extranjero.
-      </p>
-    </div>
-
-    <div class="subcont-identidad">
-      <div class="sucont sub-mision">
-        <h3 class="tmision">Mision</h3>
-        <p>
-          Comercializar productos nacionales en mercados extranjeros, mediante
-          la ejecución de proyectos de exportación que se ajustan a las
-          necesidades y a la naturaleza de los bienes de nuestros clientes
-        </p>
-      </div>
-
-      <div class="sucont sub-vision">
-        <h3 class="tvision">Vision</h3>
-        <p>
-          Ser la comercializadora especializada en exportación de productos
-          mexicanos más eficiente y competitiva del país, entregando
-          soluciones integrales en materia de comercio exterior.
-        </p>
-      </div>
-
-      <div class="sucont sub-razondeser">
-        <h3 class="trazondeser">Razon De Ser</h3>
-        <p>
-          GR comercializadora internacional comienza por la iniciativa de
-          diversificar socios comerciales en materia de comercio exterior,
-          teniendo como eje rector productos mexicanos que compiten en
-          calidad, precio y valor agregado a nivel internacional.
-        </p>
-      </div>
-
-      <div class="sucont sub-valores">
-        <h3 class="tvalores">Nuestos Valores</h3>
-        <ul>
-          <li>Responsabilidad.</li>
-          <li>Decisiones en valor de nuestro cliente.</li>
-          <li>Eficiencia y competitividad.</li>
-          <li>Visión global.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <div class="w3-container mt-5 p-5" id="cont-services">
-    <h2 class="text-center">Servicios</h2>
-
-    <div class="w3-row my-5">
-      <a href="javascript:void(0)" onclick="openCity(event, 'service1');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-          Exportacion
+  <body>
+    <nav
+      class="StyTypo navbar navbar-expand-lg navbar-light bg-warning fixed-top"
+    >
+      <img class="logonav" src="./app/static/img/Logo GR.png" alt="" />
+      <a class="navbar-brand" href="#" id="home">Gr México C.I</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            data-scroll
+            class="nav-item nav-link active bd-right"
+            href="#"
+            id="btn-identity"
+            >Nuestra Identidad</a
+          >
+          <a
+            class="nav-item nav-link active bd-right"
+            href="#"
+            id="btn-services"
+            >Servicios</a
+          >
+          <a class="nav-item nav-link active" href="#" id="btn-contact"
+            >Contactanos</a
+          >
         </div>
-      </a>
-      <a href="javascript:void(0)" onclick="openCity(event, 'service2');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-          Busqueda Internacional de Proveedores
+      </div>
+    </nav>
+
+    <div class="info-container-img"></div>
+
+    <section class="Section1" id="scroll-index">
+      <div class="info-container-info">
+        <h1 class="titularDeImg">
+          Logistic and <br />
+          Transportation company
+        </h1>
+        <div class="d-flex">
+          <a
+            id="sub-btn-identity"
+            class="btn orangebtn shadow-lg rounded"
+            style="color: white;"
+            >Ver Identidad</a
+          >
+          <a
+            id="sub-btn-services"
+            class="btn blackbtn shadow-lg rounded"
+            style="color: white;"
+            >Ver Servicios</a
+          >
+          <a class="btn orangebtn" style="color: white;">Ver Cotizacion</a>
         </div>
-      </a>
-      <a href="javascript:void(0)" onclick="openCity(event, 'service3');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-          Importacion y Logistica
+      </div>
+    </section>
+
+    <section id="cont-sect">
+      <div id="cont-identidad">
+        <h2 class="mb-5">Quienes Somos</h2>
+        <p>
+          En GR somos una empresa especializada en brindar asesorías de comercio
+          exterior, despacho aduanal y comercialización internacional de sus
+          productos. <br />
+          Nuestro modelo de negocio nació como respuesta a la demanda del sector
+          empresarial en establecer una línea de negocio soportada por la
+          generación de ventas al extranjero.
+        </p>
+      </div>
+
+      <div class="subcont-identidad">
+        <div class="sucont sub-mision">
+          <h3 class="tmision">Mision</h3>
+          <p>
+            Comercializar productos nacionales en mercados extranjeros, mediante
+            la ejecución de proyectos de exportación que se ajustan a las
+            necesidades y a la naturaleza de los bienes de nuestros clientes
+          </p>
         </div>
-      </a>
-      <a href="javascript:void(0)" onclick="openCity(event, 'service4');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-          Certificacion Internacional de Productos
+
+        <div class="sucont sub-vision">
+          <h3 class="tvision">Vision</h3>
+          <p>
+            Ser la comercializadora especializada en exportación de productos
+            mexicanos más eficiente y competitiva del país, entregando
+            soluciones integrales en materia de comercio exterior.
+          </p>
         </div>
-      </a>
-      <a href="javascript:void(0)" onclick="openCity(event, 'service5');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-          Consultoria en Comercio Exterior
+
+        <div class="sucont sub-razondeser">
+          <h3 class="trazondeser">Razon De Ser</h3>
+          <p>
+            GR comercializadora internacional comienza por la iniciativa de
+            diversificar socios comerciales en materia de comercio exterior,
+            teniendo como eje rector productos mexicanos que compiten en
+            calidad, precio y valor agregado a nivel internacional.
+          </p>
         </div>
-      </a>
+
+        <div class="sucont sub-valores">
+          <h3 class="tvalores">Nuestos Valores</h3>
+          <ul>
+            <li>Responsabilidad.</li>
+            <li>Decisiones en valor de nuestro cliente.</li>
+            <li>Eficiencia y competitividad.</li>
+            <li>Visión global.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="w3-container mt-5 p-5" id="cont-services">
+      <h2 class="text-center">Servicios</h2>
+      <div class="w3-row my-5">
+        <a href="javascript:void(0)" onclick="openCity(event, 'service1');">
+          <div
+            class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"
+          >
+            Exportacion
+          </div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'service2');">
+          <div
+            class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"
+          >
+            Busqueda Internacional de Proveedores
+          </div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'service3');">
+          <div
+            class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"
+          >
+            Importacion y Logistica
+          </div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'service4');">
+          <div
+            class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"
+          >
+            Certificacion Internacional de Productos
+          </div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'service5');">
+          <div
+            class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"
+          >
+            Consultoria en Comercio Exterior
+          </div>
+        </a>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div id="service1" class="w3-container city">
+          <h2>Exportacion</h2>
+          <p>
+            Estrategia personalizable donde el objetivo es comercializar
+            internacionalmente productos y mercancías alrededor del mundo,
+            mediante la generación de ventas y de la operación de la cadena
+            logística, partiendo de las instalaciones del cliente al mercado
+            objetivo.
+          </p>
+          <div class="d-flex justify-content-center my-4">
+            <button class="btn btn-danger">Cotizanos</button>
+          </div>
+        </div>
+        <div id="service2" class="w3-container city" style="display: none;">
+          <h2>Busqueda Internacional de Proveedores</h2>
+          <p>
+            Servicio especializado en las búsqueda y gestión de compras de
+            mercancías en el extranjero para satisfacer las necesidades de
+            cadenas productivas, distribuidores o proyectos.
+          </p>
+          <div class="d-flex justify-content-center my-4">
+            <button class="btn btn-danger">Cotizanos</button>
+          </div>
+        </div>
+        <div id="service3" class="w3-container city" style="display: none;">
+          <h2>Importacion y Logistica</h2>
+          <p>
+            Asistencia diseñada para poner al servicio del cliente una opción
+            rápida y eficiente para la liberación de mercancías, así como las
+            señaladas en los diferentes padrones de importación sectoriales.
+          </p>
+          <div class="d-flex justify-content-center my-4">
+            <button class="btn btn-danger">Cotizanos</button>
+          </div>
+        </div>
+        <div id="service4" class="w3-container city" style="display: none;">
+          <h2>Certificacion Internacional de Productos</h2>
+          <p>
+            Servicio de asesoría de certificación de productos ante diversas
+            instituciones extranjeras con un enfoque comercial
+          </p>
+          <div class="d-flex justify-content-center my-4">
+            <button class="btn btn-danger">Cotizanos</button>
+          </div>
+        </div>
+        <div id="service5" class="w3-container city" style="display: none;">
+          <h2>Consultoria en Comercio Exterior</h2>
+          <p>
+            Espacio para resolver casos especiales y complejos, así como dudas
+            generales antes o durante una operación de comercio exterior
+          </p>
+          <div class="d-flex justify-content-center my-4">
+            <button class="btn btn-danger">Cotizanos</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center">
-      <div id="service1" class="w3-container city" style="display: none;">
-        <h2>Exportacion</h2>
-        <p>
-          Estrategia personalizable donde el objetivo es comercializar
-          internacionalmente productos y mercancías alrededor del mundo,
-          mediante la generación de ventas y de la operación de la cadena
-          logística, partiendo de las instalaciones del cliente al mercado
-          objetivo.
-        </p>
-      </div>
 
-      <div id="service2" class="w3-container city" style="display: none;">
-        <h2>Busqueda Internacional de Proveedores</h2>
-        <p>
-          Servicio especializado en las búsqueda y gestión de compras de
-          mercancías en el extranjero para satisfacer las necesidades de
-          cadenas productivas, distribuidores o proyectos.
-        </p>
+    <section class="cont-footer" id="cont-contact">
+      <div class="footer-title">
+        <h2>Contactanos</h2>
       </div>
+      <div class="row">
+        <div class="col call">
+          <img
+            class="img-icon"
+            src="./app/static/img/icons8-phone-100.png"
+            alt=""
+          />
+          <br />
+          <span>(833) 431-75-06</span>
+          <br />
+          <span>(833) 303-16-57</span>
+        </div>
+        <div class="col ubic">
+          <img
+            class="img-icon"
+            src="./app/static/img/icons8-world-map-64.png"
+            alt=""
+          />
+          <br />
+          <span
+            ><strong>Calle: </strong>Quintero No Ext 103 No int ALTOS,
+            <br />
+            <strong>Col. </strong>Hidalgo Oriente, Cd Madero, Tamps.
+            México.</span
+          >
+        </div>
+        <div class="col contact">
+          <img
+            class="img-icon"
+            src="./app/static/img/icons8-new-contact-64.png"
+            alt=""
+          />
+          <br />
+          <span>gr.comercializadora.int@gmail.com</span>
+          <br />
+          <span>www.grinternacional.com.mx</span>
+        </div>
+      </div>
+    </section>
 
-      <div id="service3" class="w3-container city" style="display: none;">
-        <h2>Importacion y Logistica</h2>
-        <p>
-          Asistencia diseñada para poner al servicio del cliente una opción
-          rápida y eficiente para la liberación de mercancías, así como las
-          señaladas en los diferentes padrones de importación sectoriales.
-        </p>
-      </div>
-
-      <div id="service4" class="w3-container city" style="display: none;">
-        <h2>Certificacion Internacional de Productos</h2>
-        <p>
-          Servicio de asesoría de certificación de productos ante diversas
-          instituciones extranjeras con un enfoque comercial
-        </p>
-      </div>
-      <div id="service5" class="w3-container city" style="display: none;">
-        <h2>Consultoria en Comercio Exterior</h2>
-        <p>
-          Espacio para resolver casos especiales y complejos, así como dudas
-          generales antes o durante una operación de comercio exterior
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <section class="cont-footer" id="cont-contact">
-    <div class="row">
-      <div class="col call">
-        <img class="img-icon" src="./app/static/img/icons8-phone-100.png" alt="">
-        <br>
-        <span>(833) 431-75-06</span> 
-        <br>
-        <span>(833) 303-16-57</span>
-      </div>
-      <div class="col ubic">
-        <img class="img-icon" src="./app/static/img/icons8-world-map-64.png" alt="">
-        <br>
-        <span><strong>Calle: </strong>Quintero No Ext 103 No int ALTOS, 
-          <br>
-        <strong>Col. </strong>Hidalgo Oriente, Cd Madero, Tamps. México.</span>
-      </div>
-      <div class="col contact">
-        <img class="img-icon" src="./app/static/img/icons8-new-contact-64.png" alt="">
-        <br>
-        <span>gr.comercializadora.int@gmail.com</span> 
-        <br>
-        <span>www.grinternacional.com.mx</span>
-      </div>
-    </div>
-  </section>
-
-  <script src="./app/static/js/app.js"></script>
-  <script src="./app/static/js/servicios.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="./app/static/js/app.js"></script>
+    <script src="./app/static/js/servicios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
 </html>

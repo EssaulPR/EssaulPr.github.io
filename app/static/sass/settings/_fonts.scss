@@ -5,7 +5,6 @@
 body {
   font-family: 'Bangers', cursive;
   font-family: 'Bebas Neue', cursive;
-  font-weight: 500;
 }
 
 @mixin config-titles($prefix, $size...) {
@@ -19,7 +18,7 @@ body {
 @include config-titles(
   'h',
   '1' 70px Bebas Neue,
-  '2' 25px Bebas Neue,
+  '2' 45px Bebas Neue,
   '3' 20px Bebas Neue,
   '4' 18px Bebas Neue,
   '5' 15px Bebas Neue,

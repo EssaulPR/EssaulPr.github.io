@@ -43,7 +43,6 @@ h6 {
   position: absolute;
   background: url("../img/camionCarga2.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
   height: 100%;
   width: 100%; }
 
@@ -109,7 +108,6 @@ h6 {
 
 .w3-container {
   background-color: #ffc107;
-  max-height: 600px;
   height: 100%; }
   .w3-container h2 {
     font-weight: 500; }

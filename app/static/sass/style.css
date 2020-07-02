@@ -3,7 +3,6 @@
 body {
   font-family: 'Bangers', cursive;
   font-family: 'Bebas Neue', cursive;
-  font-weight: 500;
 }
 
 h1 {
@@ -12,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 45px;
   font-family: Bebas;
 }
 
@@ -62,7 +61,6 @@ h6 {
   position: absolute;
   background: url("../img/camionCarga2.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
   height: 100%;
   width: 100%;
 }
@@ -83,8 +81,8 @@ h6 {
 }
 
 .info-container-info h1 {
-  color: #17202a;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 55px;
 }
 
 .info-container-info .btn {
@@ -122,16 +120,9 @@ h6 {
 
 #cont-sect #cont-identidad {
   padding-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-align: center;
 }
 
@@ -188,19 +179,52 @@ h6 {
 
 .w3-container {
   background-color: #ffc107;
-  max-height: 500px;
   height: 100%;
 }
 
 .w3-container h2 {
-  font-size: 2.5em;
   font-weight: 500;
+}
+
+.w3-container .w3-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 .w3-container .w3-row .w3-third {
   width: 20%;
   text-align: center;
   font-size: 1.5em;
+}
+
+@media (min-width: 601px) {
+  .w3-container .w3-row .w3-third {
+    width: auto;
+    text-align: center;
+  }
+}
+
+.w3-container .w3-container.city {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.w3-container .w3-container.city .btn {
+  width: auto;
 }
 
 .w3-container .w3-container.city h2 {
@@ -215,24 +239,44 @@ h6 {
 }
 
 .cont-footer {
-  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  background-color: #ffc107;
-  position: absolute;
-  width: 100%;
+  margin-bottom: 50px;
 }
 
-.cont-footer .col {
-  position: relative;
-  top: -50px;
+.cont-footer .responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.cont-footer .img-icon {
-  height: 80px;
+.cont-footer .responsive .colu {
+  margin-top: 35px;
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
+.cont-footer .responsive .img-icon {
+  height: 95px;
   margin-bottom: 25px;
 }
 
-.cont-footer span {
+.cont-footer .responsive span {
   font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

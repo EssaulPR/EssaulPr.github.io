@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 body {
-  font-family: 'Bangers', cursive;
-  font-family: 'Bebas Neue', cursive; }
+  font-family: 'Roboto Slab', serif; }
 
 h1 {
   font-size: 70px;
@@ -31,7 +29,7 @@ h6 {
 .StyTypo .logonav {
   margin-right: 20px; }
 .StyTypo a {
-  font-size: 25px; }
+  font-size: 15px; }
 
 .Section1 {
   height: 100vh;
@@ -74,7 +72,6 @@ h6 {
   display: flex;
   flex-direction: column; }
   #cont-sect #cont-identidad {
-    padding-top: 100px;
     align-items: center;
     text-align: center; }
     #cont-sect #cont-identidad h1 {
@@ -83,21 +80,20 @@ h6 {
       font-size: 25px; }
   #cont-sect .subcont-identidad {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
     align-items: center; }
     #cont-sect .subcont-identidad .sucont {
       padding: 15px;
-      margin-left: 35px;
-      margin-right: 35px;
-      margin-top: 65px;
+      margin: 1em;
       border-radius: 6px;
       -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.42);
       -moz-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.42);
       box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.42);
-      width: 550px; }
+      width: 550px;
+      min-height: 300px;
+      margin-bottom: 1em; }
       #cont-sect .subcont-identidad .sucont p {
         font-size: 22px; }
       #cont-sect .subcont-identidad .sucont h3 {
@@ -114,46 +110,80 @@ h6 {
   .w3-container .w3-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%; }
+    justify-content: center; }
+    @media (max-width: 601px) {
+      .w3-container .w3-row {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        align-items: center; } }
     .w3-container .w3-row .w3-third {
       width: 20%;
       text-align: center;
       font-size: 1.5em; }
       @media (min-width: 601px) {
         .w3-container .w3-row .w3-third {
-          width: auto;
-          text-align: center; } }
+          width: auto; } }
+      @media (max-width: 601px) {
+        .w3-container .w3-row .w3-third {
+          width: 100%;
+          margin-bottom: 0.5em; } }
   .w3-container .w3-container.city {
     justify-content: center;
     align-self: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 1em; }
     .w3-container .w3-container.city .btn {
-      width: auto; }
+      width: auto;
+      background-color: #f39c12; }
     .w3-container .w3-container.city h2 {
       text-align: center;
-      margin-bottom: 1em; }
+      margin-bottom: 0.5em; }
     .w3-container .w3-container.city p {
       text-align: center;
       font-size: 1.5em;
       margin: 0 10%; }
 
+.services-info .btn {
+  width: auto;
+  background-color: #17202a;
+  border-color: #17202a; }
+
 .cont-footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-bottom: 50px; }
+  text-align: center; }
   .cont-footer .responsive {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0; }
     .cont-footer .responsive .colu {
-      margin-top: 35px;
-      margin-left: 175px;
-      margin-right: 175px; }
+      margin-bottom: 1em; }
     .cont-footer .responsive .img-icon {
-      height: 95px;
-      margin-bottom: 25px; }
+      max-height: 70px;
+      margin-bottom: 1.5em; }
     .cont-footer .responsive span {
       font-size: 20px; }
+
+.modal-dialog {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.dropdown {
+  width: 100%; }
+  .dropdown .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .dropdown .dropdown-menu {
+    width: 100%; }
+
+.modal-footer .btn.btn-secondary {
+  background-color: #17202a;
+  border-color: #17202a; }
+.modal-footer .btn.btn-primary {
+  background-color: #f39c12;
+  border-color: #f39c12; }

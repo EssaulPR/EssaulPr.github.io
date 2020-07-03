@@ -1,0 +1,29 @@
+.modal-dialog {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dropdown {
+  width: 100%;
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+.modal-footer {
+  .btn.btn-secondary {
+    background-color: $negro;
+    border-color: $negro;
+  }
+  .btn.btn-primary {
+    background-color: $naranja;
+    border-color: $naranja;
+  }
+}

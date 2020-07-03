@@ -7,16 +7,23 @@
   .w3-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
-    width: 100%;
+    justify-content: center;
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 0.5em;
+      align-items: center;
+    }
     .w3-third {
       width: 20%;
       text-align: center;
       font-size: 1.5em;
       @include sm {
         width: auto;
-        text-align: center;
+      }
+      @include mobile {
+        width: 100%;
+        margin-bottom: 0.5em;
       }
     }
   }
@@ -25,17 +32,27 @@
     justify-content: center;
     align-self: center;
     flex-direction: column;
+    margin-top: 1em;
     .btn {
       width: auto;
+      background-color: $naranja;
     }
     h2 {
       text-align: center;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
     }
     p {
       text-align: center;
       font-size: 1.5em;
       margin: 0 10%;
     }
+  }
+}
+
+.services-info {
+  .btn {
+    width: auto;
+    background-color: $negro;
+    border-color: $negro;
   }
 }

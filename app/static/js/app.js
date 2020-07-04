@@ -12,36 +12,42 @@ const home =document.querySelector("#home");
 // Para hacer el toggle
 // BOTON PARA SCROLL DESDE EL NAV
 nuestraIdentidad.addEventListener("click", (e) => {
+    e.preventDefault();
     $("html, body").animate({
         scrollTop: $("#cont-identidad").offset().top
     }, 1500)
 });
 // BOTON PARA SCROLL DESDE LA IMAGEN
 subNuestraIdentidad.addEventListener("click", (e) => {
+    e.preventDefault();
     $("html, body").animate({
         scrollTop: $("#cont-identidad").offset().top
     }, 1500)
 });
 // Para regresar a home
 home.addEventListener("click", (e) => {
+    e.preventDefault();
     $("html, body").animate({
         scrollTop: $("#scroll-index").offset().top
     }, 1500)
 });
 // BOTON PARA SCROLL DESDE EL NAV
 services.addEventListener("click", (e) => {
+    e.preventDefault();
     $("html, body").animate({
         scrollTop: $("#cont-services").offset().top
     }, 1500)
 });
 // BOTON PARA SCROLL DESDE LA IMAGEN
 subServices.addEventListener("click", (e) => {
+    e.preventDefault();
     $("html, body").animate({
         scrollTop: $("#cont-services").offset().top
     }, 1500)
 });
 // BOTON PARA SCROLL DESDE EL NAV
 contact.addEventListener("click", (e) => {
+    e.preventDefault();
     $("html, body").animate({
         scrollTop: $("#cont-contact").offset().top
     }, 1500)

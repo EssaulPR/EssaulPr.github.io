@@ -26,10 +26,8 @@ h6 {
   font-size: 12px;
   font-family: Lato; }
 
-.StyTypo .logonav {
-  margin-right: 20px; }
 .StyTypo a {
-  font-size: 15px; }
+  font-size: 20px; }
 
 .Section1 {
   height: 100vh;
@@ -152,14 +150,17 @@ h6 {
 .cont-footer {
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  background-color: #ffc107;
+  margin-top: 100px; }
   .cont-footer .responsive {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0; }
     .cont-footer .responsive .colu {
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      width: 600px; }
     .cont-footer .responsive .img-icon {
       max-height: 70px;
       margin-bottom: 1.5em; }

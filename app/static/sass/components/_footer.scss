@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: $nav-bar-color;
+  margin-top: 100px;
   .responsive {
     display: flex;
     justify-content: space-around;
@@ -9,6 +11,7 @@
     margin: 0;
     .colu {
       margin-bottom: 1em;
+      width: 600px;
     }
     .img-icon {
       max-height: 70px;

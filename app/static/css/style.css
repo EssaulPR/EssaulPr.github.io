@@ -29,6 +29,9 @@ h6 {
 .StyTypo a {
   font-size: 20px; }
 
+nav {
+  background-color: #ffc107; }
+
 .Section1 {
   height: 100vh;
   display: flex;
@@ -188,3 +191,5 @@ h6 {
 .modal-footer .btn.btn-primary {
   background-color: #f39c12;
   border-color: #f39c12; }
+
+/*# sourceMappingURL=style.css.map */
